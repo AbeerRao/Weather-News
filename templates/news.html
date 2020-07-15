@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Latest News</title>
+{% endblock %}
+
+{% block content %}
+<div class="news-div">
+    <h1>
+        <center>
+            These are the top 5 articles form <a href="https://www.foxnews.com"> Fox News</a>
+        </center>
+    </h1>
+</div>
+{% for article in articles[:6] %}
+<ul>
+    <li class="list-i">
+        <div class="article-div">
+            <h2 class="article">{{ article }}</h2>   
+        </div>
+    </li>
+</ul>
+{% endfor %}
+{% endblock %}

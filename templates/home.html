@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Home Page</title>
+{% endblock %}
+
+{% block content %}
+<div class="intro-home">
+    <h1>Abeer's Weather And News!</h1>
+    <p>Hello everyone and welcome to Abeer's Weather and News! Here you will get the latest news and weather
+        updates! What do you want to get? The latest news from Fox News or weather from IBM's Weather.com?</p>
+</div>
+<div class="btns-div">
+    <div class="demo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing-content">
+                            <h3 class="title">News</h3>
+                            <ul>
+                                <li>Latest News</li>
+                                <li>From Fox News</li>
+                                <li>Top 5 articles</li>
+                                <li class="disable">Maintenance</li>
+                                <li class="disable">15 Subdomains</li>
+                            </ul>
+                            <div class="pricingTable-signup">
+                                <a href="#">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable yellow">
+                        <div class="pricingTable-header">
+                            <div class="icon">
+                                <i class="fas fa-train"></i>
+                            </div>
+                            <div class="price-value">
+                                <span class="currency">$</span>
+                                <span class="amount">20</span>
+                            </div>
+                        </div>
+                        <div class="pricing-content">
+                            <h3 class="title">Business</h3>
+                            <ul>
+                                <li>50GB Disk Space</li>
+                                <li>50 Email Accounts</li>
+                                <li>50GB Bandwidth</li>
+                                <li>Maintenance</li>
+                                <li class="disable">15 Subdomains</li>
+                            </ul>
+                            <div class="pricingTable-signup">
+                                <a href="#">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
